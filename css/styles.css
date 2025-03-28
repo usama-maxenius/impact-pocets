@@ -1,0 +1,615 @@
+body {
+    font-family: 'Jost', sans-serif;
+    color: #333;
+}
+.navbar-brand img {
+    height: 40px;
+}
+.nav-item {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-right: 45px;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('/images/hero-background.png') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 600;
+    max-width: 50%;
+    text-align: left;
+    line-height: 60px;
+}
+
+/* About Section */
+.about-section {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.about-section img {
+    border-radius: 10px;
+}
+
+.about-section-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: #36355D;
+    text-align: left;
+    line-height: 60px;
+}
+
+.impact-pocket-img {
+    margin-top: -100px;
+}
+
+.about-section-text {
+    font-size: 16px;
+    line-height: 32px;
+    text-align: left;
+}
+
+.meta-info-text {
+    font-size: 24px;
+    color: #3c4144;
+    font-weight: 700;
+    line-height: 31px;
+    width: 30%;
+    text-align: left;
+}
+
+/* Why Join Impact Pockets Section */
+.why-join-section {
+    color: #36355D;
+    padding: 60px 0;
+    padding-top: 200px;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+
+.benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #aaa;
+    width: 45%;
+}
+
+.benefit-item-text {
+    color: #3c4144;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.benefit-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.learn-more-btn,
+.learn-more-btn-why-join {
+    margin-top: 20px;
+    background-color: #ff7f32;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.learn-more-btn:hover,
+.learn-more-btn-why-join:hover {
+    background-color: #e56f2b;
+}
+
+.learn-more-btn-why-join {
+    float: right;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column; 
+    min-height: 400px; 
+    background-color: #f0f4f8; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    max-width: 60%; 
+}
+.info-title {
+    font-size: 28px;
+    font-weight: 600;
+    color:#36355D; 
+    margin: 0;
+}
+.info-subtitle {
+    font-size: 18px;
+    color: #1e3a8a;
+    margin: 0;
+}
+
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.info-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+.highlight-box {
+    background: white;
+    padding: 15px;
+    font-weight: bold;
+    max-width: 276px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: 20px;
+    border-radius: 5px; 
+    margin-top: auto; 
+    align-self: flex-end; 
+}
+
+.highlight-box p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.section-subtitle-who-we-are {
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 68px;
+}
+.padding-important{
+    padding-top: 150px !important;
+}
+.process-section {
+    background: #f8f9fa;
+    padding: 50px 0;
+}
+
+.role-section {
+    background: #ececec;
+    padding: 50px 0;
+}
+
+.subscribe-section {
+    background-color: #f0f1f7;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.subscribe-section .btn-outline-light {
+    border-color: #6c757d;
+    color: #6c757d;
+    font-weight: 500;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+}
+.subscribe-btn{
+    background-color: #ff6200;
+    color: #fff;
+}
+
+.subscribe-section .btn-outline-light:hover {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.footer-section {
+    background-color: #36355D;
+}
+.py-5{
+    padding-top: 150px !important;
+}
+
+.footer-brand-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.footer-tagline {
+    font-size: 0.9rem;
+    opacity: 0.8;
+    line-height: 1.6;
+    color: #fff;
+    margin-top: 25px;
+}
+
+
+.social-icons .social-icon {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-right: 15px;
+    transition: opacity 0.3s ease;
+    margin-top: 25px;
+}
+
+.social-icons .social-icon:hover {
+    color: #ff6200;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.footer-links li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+    color: #fff;
+    opacity: 0.7;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    color: #fff;
+}
+
+.contact-info .contact-item i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff6200;
+    border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #e55a00;
+}
+
+.back-to-top i {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* Responsiveness */
+
+@media (max-width: 992px) {
+    /* Navbar */
+    .nav-item {
+        margin-right: 20px;
+    }
+
+    .hero-title {
+        font-size: 36px;
+        line-height: 48px;
+        max-width: 70%;
+    }
+
+    .about-section-title {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    .meta-info-text {
+        width: 50%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .impact-pocket-img {
+        margin-top: 0;
+    }
+
+    .why-join-section {
+        padding-top: 100px;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+
+    .benefit-item {
+        width: 100%;
+    }
+
+    .info-box {
+        padding: 20px;
+    }
+
+    .footer-brand-title {
+        font-size: 1.3rem;
+    }
+
+    .footer-heading {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-item {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .hero-section {
+        height: 300px;
+        padding-left: 3%;
+    }
+
+    .hero-title {
+        font-size: 28px;
+        line-height: 36px;
+        max-width: 80%;
+    }
+
+    .about-section {
+        padding-top: 80px;
+    }
+
+    .about-section-title {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+    }
+
+    .about-section-text {
+        text-align: center;
+    }
+
+    .meta-info-text {
+        width: 100%;
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .why-join-section {
+        padding: 40px 0;
+        padding-top: 80px;
+    }
+
+    .section-title {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+
+    .benefit-item {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .learn-more-btn,
+    .learn-more-btn-why-join {
+        display: block;
+        margin: 20px auto;
+        float: none;
+    }
+
+    .info-box {
+        padding: 15px;
+    }
+    .left-content{
+        max-width: 100% !important;
+    }
+
+    .section-subtitle-who-we-are {
+        max-width: 90%;
+        font-size: 16px;
+    }
+
+    .process-section {
+        padding: 30px 0;
+    }
+    .role-section {
+        padding: 30px 0;
+    }
+    .footer-brand-title {
+        font-size: 1.2rem;
+    }
+
+    .footer-heading {
+        font-size: 0.9rem;
+    }
+
+    .contact-info .contact-item {
+        font-size: 0.85rem;
+    }
+
+    .social-icons .social-icon {
+        font-size: 1rem;
+    }
+    .text-center-important{
+    
+        text-align: center !important; 
+        margin: 0 auto; 
+        width: 100%; 
+        max-width: 225px;    
+}
+}
+
+@media (max-width: 576px) {
+    .hero-section {
+        height: 250px;
+    }
+
+    .hero-title {
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 90%;
+    }
+
+    /* About Section */
+    .about-section {
+        padding-top: 50px;
+    }
+
+    .about-section-title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 50px;
+    }
+
+    .about-section-text {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .meta-info-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    /* Why Join Section */
+    .section-title {
+        font-size: 24px;
+    }
+
+    .benefit-item-text {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .benefit-icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .info-title {
+        font-size: 1.2rem;
+    }
+
+    .info-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .info-list li {
+        font-size: 0.9rem;
+    }
+    .left-content{
+        max-width: 100%!important;
+        margin-top: 40px;
+    }
+
+    .info-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    .section-subtitle-who-we-are {
+        font-size: 14px;
+        margin-bottom: 40px;
+    }
+
+    .process-section {
+        padding: 20px 0;
+    }
+
+    .role-section {
+        padding: 20px 0;
+    }
+
+    .footer-brand-title {
+        font-size: 1.1rem;
+    }
+
+    .footer-tagline {
+        font-size: 0.8rem;
+    }
+
+    .footer-heading {
+        font-size: 0.85rem;
+    }
+
+    .footer-links a {
+        font-size: 0.8rem;
+    }
+
+    .contact-info .contact-item {
+        font-size: 0.8rem;
+    }
+
+    .social-icons .social-icon {
+        font-size: 0.9rem;
+        margin-right: 10px;
+    }
+    .text-center-important{
+    
+        text-align: center !important; 
+        margin: 0 auto; 
+        width: 100%; 
+        max-width: 225px;   
+}
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+    }
+
+    .back-to-top i {
+        font-size: 1rem;
+    }
+}
