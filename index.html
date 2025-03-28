@@ -3,134 +3,134 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Impact Pockets</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Impact Pockets - Creating opportunities for experienced operators to launch private equity funds">
+    <title>Impact Pockets | Private Equity Fund Incubation</title>
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" as="style">
+    <link rel="preload" href="css/main.css" as="style">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- Skip link for accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="/images/Logo.png" alt="Impact Pockets">
+            <a class="navbar-brand" href="/">
+                <img src="images/logo.png" alt="Impact Pockets" width="180" height="40">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+
+            <button class="navbar-toggle" aria-expanded="false" aria-controls="navbar-menu">
+                <span class="hamburger"></span>
+                <span class="visually-hidden">Menu</span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+
+            <div class="navbar-menu" id="navbar-menu">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Our Process</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
-                    </li>
+                    <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="#process" class="nav-link">Our Process</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section d-flex align-items-center text-center text-md-start">
+    <header class="hero">
         <div class="container">
             <h1 class="hero-title">Creating Opportunities For Experienced Operators To Launch Private Equity Funds</h1>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about-section pt-7">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-6 text-center">
-                    <img src="images/impact pocket specilaize.png" class="img-fluid impact-pocket-img"
-                        alt="Impact Pockets Specialization">
-                </div>
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="about-section-title">Partnering with Experts Like You to Create Lasting Impact</h2>
-                    <p class="about-section-text">
-                        Impact Pockets specializes in incubating private equity funds, sharing risks, and unlocking
-                        untapped opportunities. With your expertise in industry and our experience in fundraising, we
-                        can shape a future together, translating your potential into results through action.
-                    </p>
-                    <p class="meta-info-text">
-                        Your Talent<br>
-                        Our Strategy<br>
-                        Big Impact
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Join Impact Pockets Section -->
-    <section class="why-join-section pt-7">
-        <div class="container">
-            <div class="row align-items-center">
-                <!-- Left Column -->
-                <div class="col-md-6 text-center text-md-start">
-                    <h2 class="section-title">Why Join Impact Pockets</h2>
-                    <div class="benefits-list">
-                        <div class="benefit-item">
-                            <img src="/images/why-join-img-1.png" alt="Influence Icon" class="benefit-icon">
-                            <p class="benefit-item-text">Increase Your Influence</p>
-                        </div>
-                        <div class="benefit-item">
-                            <img src="images/why-join-img-2.png" alt="Funds Icon" class="benefit-icon">
-                            <p class="benefit-item-text">Design Scalable Funds For Lasting Success</p>
-                        </div>
-                        <div class="benefit-item">
-                            <img src="images/why-join-img-3.png" alt="Profit Icon" class="benefit-icon">
-                            <p class="benefit-item-text">Profit From Each Fund’s Success</p>
-                        </div>
-                        <div class="benefit-item">
-                            <img src="images/why-join-img-4.png" alt="Resources Icon" class="benefit-icon">
-                            <p class="benefit-item-text">Use Our Resources To Reach Top Investors</p>
+    <main id="main-content">
+        <!-- About Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-media">
+                        <img src="images/impact-pocket-specialize.png" alt="Impact Pockets Specialization"
+                            loading="lazy">
+                    </div>
+                    <div class="about-content">
+                        <h2 class="section-title">Partnering with Experts Like You to Create Lasting Impact</h2>
+                        <p class="about-text">
+                            Impact Pockets specializes in incubating private equity funds, sharing risks, and unlocking
+                            untapped opportunities. With your expertise in industry and our experience in fundraising,
+                            we
+                            can shape a future together, translating your potential into results through action.
+                        </p>
+                        <div class="value-proposition">
+                            <p class="value-prop">Your Talent</p>
+                            <p class="value-prop">Our Strategy</p>
+                            <p class="value-prop">Big Impact</p>
                         </div>
                     </div>
-                    <a href="#" class="btn btn-primary learn-more-btn  mx-auto mx-md-0">Learn More</a>
                 </div>
-                <!-- Right Column -->
-                <div class="col-md-6 mt-4 mt-md-0">
+            </div>
+        </section>
+
+        <!-- Why Join Section -->
+        <section class="why-join-section">
+            <div class="container">
+                <div class="why-join-grid">
+                    <div class="benefits-column">
+                        <h2 class="section-title">Why Join Impact Pockets</h2>
+
+                        <div class="benefits-list">
+                            <div class="benefit-item">
+                                <img src="images/why-join-img-1.png" alt="" class="benefit-icon" aria-hidden="true">
+                                <p class="benefit-text">Increase Your Influence</p>
+                            </div>
+                            <div class="benefit-item">
+                                <img src="images/why-join-img-2.png" alt="" class="benefit-icon" aria-hidden="true">
+                                <p class="benefit-text">Design Scalable Funds For Lasting Success</p>
+                            </div>
+                            <div class="benefit-item">
+                                <img src="images/why-join-img-3.png" alt="" class="benefit-icon" aria-hidden="true">
+                                <p class="benefit-text">Profit From Each Fund's Success</p>
+                            </div>
+                            <div class="benefit-item">
+                                <img src="images/why-join-img-4.png" alt="" class="benefit-icon" aria-hidden="true">
+                                <p class="benefit-text">Use Our Resources To Reach Top Investors</p>
+                            </div>
+                        </div>
+
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+
                     <div class="info-box">
-                        <div class="left-content">
+                        <div class="info-content">
                             <h3 class="info-title">A Growing Opportunity</h3>
                             <p class="info-subtitle">Private Equity Is Transforming Business:</p>
+
                             <ul class="info-list">
                                 <li>
-                                    <img src="/images/growing-oppurtunity-img-1.png" alt="Investors Icon"
-                                        class="info-icon">
-                                    The Demand By Investors For Risk Adjusted Returns In A Variety Of Industries Is
-                                    Surging
+                                    <img src="images/growing-opportunity-img-1.png" alt="" aria-hidden="true">
+                                    <span>The Demand By Investors For Risk Adjusted Returns In A Variety Of Industries
+                                        Is Surging</span>
                                 </li>
                                 <li>
-                                    <img src="/images/growing-oppurtunity-img-2.png" alt="Opportunities Icon"
-                                        class="info-icon">
-                                    Investors Are Seeking Opportunities Backed By Industry Experts
+                                    <img src="images/growing-opportunity-img-2.png" alt="" aria-hidden="true">
+                                    <span>Investors Are Seeking Opportunities Backed By Industry Experts</span>
                                 </li>
                             </ul>
                         </div>
+
                         <div class="highlight-box">
                             <p>Impact Pockets Provides The Framework To Turn Your Vision Into A Structured, Investable
                                 Entity</p>
@@ -138,134 +138,123 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Team Section -->
-    <section class="who-we-are-section padding-important">
-        <div class="container text-center">
-            <h2 class="section-title">Discover Who We Are</h2>
-            <p class="section-subtitle-who-we-are">
-                Impact Pockets is dedicated to supporting experienced professionals in launching their own funds. We
-                only elect to work with experienced management teams.
-            </p>
-            <div class="row justify-content-center">
-                <!-- Team Image -->
-                <div class="col-12">
-                    <img src="/images/team-img.png" class="img-fluid" alt="Team Image">
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <h2 class="section-title text-center">Discover Who We Are</h2>
+                <p class="section-subtitle text-center">
+                    Impact Pockets is dedicated to supporting experienced professionals in launching their own funds. We
+                    only elect to work with experienced management teams.
+                </p>
+
+                <div class="team-media">
+                    <img src="images/team-img.png" alt="Impact Pockets Team" loading="lazy">
+                </div>
+
+                <div class="text-center">
+                    <a href="#" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
-            <a href="#"
-                class="btn btn-primary learn-more-btn-why-join d-block mx-auto d-md-inline-block float-md-end">Learn
-                More</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Process Section -->
-    <section class="process-section text-center py-7">
-        <div class="container">
-            <h2 class="section-title">The Impact Pockets Process</h2>
-            <p class="section-subtitle-who-we-are">
-                Impact Pockets is dedicated to supporting experienced professionals in launching their own funds. We
-                only elect to work with experienced management teams.
-            </p>
-            <img src="/images/process-diagram.png" class="img-fluid" alt="Process Diagram">
-            <button class="btn mt-3">
-                Check Our Process <span><img src="/images/process-icon.png" alt="Arrow Icon"></span>
-            </button>
-        </div>
-    </section>
+        <!-- Process Section -->
+        <section class="process-section">
+            <div class="container">
+                <h2 class="section-title text-center">The Impact Pockets Process</h2>
+                <p class="section-subtitle text-center">
+                    Impact Pockets is dedicated to supporting experienced professionals in launching their own funds. We
+                    only elect to work with experienced management teams.
+                </p>
 
-    <!-- Role Section -->
-
-
-    <!-- Subscribe Section (Before Footer) -->
-    <section class="subscribe-section py-3 pt-7">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-md-2 col-12 text-center text-md-start">
-                    <h5 class="subscribe-title">Subscribe Now</h5>
+                <div class="process-diagram">
+                    <img src="images/process-diagram.png" alt="Impact Pockets Process Diagram" loading="lazy">
                 </div>
-                <div class="col-md-3 col-12 mt-2 mt-md-0">
-                    <div class="input-group subscribe-form justify-content-center justify-content-md-end">
-                        <input type="email" class="form-control subscribe-input rounded-start" placeholder="Get updates"
-                            required>
-                        <button type="submit" class="btn subscribe-btn rounded-end">
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
+
+                <div class="text-center">
+                    <button class="btn btn-process">
+                        Check Our Process <img src="images/process-icon.png" alt="" aria-hidden="true">
+                    </button>
                 </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Subscribe Section -->
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-grid">
+                <h3 class="subscribe-title">Subscribe Now</h3>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Get updates" class="subscribe-input">
+                    <button type="submit" class="subscribe-btn">
+                        <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                        <span class="visually-hidden">Subscribe</span>
+                    </button>
+                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="footer-section py-5 pt-7 text-white">
+    <!-- Footer -->
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <!-- Brand Section -->
-                <div class="col-lg-3 col-md-6 mb-4 text-center">
-                    <a href=" #">
-                        <img src="/images/footer-logo.png" alt="Impact Pockets Logo" class="img-fluid">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="/">
+                        <img src="images/footer-logo.png" alt="Impact Pockets" loading="lazy">
                     </a>
                     <p class="footer-tagline">
                         We're here to level the playing field, creating opportunities for emerging creators and
                         lesser-known talent
                     </p>
-                    <div class="social-icons mt-3">
-                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+                    <div class="social-links">
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                     </div>
                 </div>
-                <!-- Pages Section -->
-                <div class="col-lg-3 col-md-6 mb-4 text-center">
-                    <h5 class="footer-heading">Pages</h5>
-                    <ul class="footer-links list-unstyled">
+
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Pages</h4>
+                    <ul>
                         <li><a href="#">Home</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Process</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#process">Process</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
-                <!-- Info Section -->
-                <div class="col-lg-2 col-md-6 mb-4 text-center">
-                    <h5 class="footer-heading">Info</h5>
-                    <ul class="footer-links list-unstyled">
+
+                <div class="footer-nav">
+                    <h4 class="footer-heading">Info</h4>
+                    <ul>
                         <li><a href="#">FAQ</a></li>
                         <li><a href="#">Support</a></li>
                     </ul>
                 </div>
-                <!-- Contact Section -->
-                <div class="col-lg-3 col-md-6 mb-4 text-center-important">
-                    <div class="contact-info">
-                        <div class="contact-item mb-3">
-                            <i class="fas fa-map-marker-alt me-2"></i>
-                            <span>214 Street Kingston, NY 12401</span>
-                        </div>
-                        <div class="contact-item mb-3">
-                            <i class="fas fa-phone-alt me-2"></i>
-                            <span>+1 555 12345</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-envelope me-2"></i>
-                            <span>support@company.com</span>
-                        </div>
-                    </div>
+
+                <div class="footer-contact">
+                    <h4 class="footer-heading">Contact</h4>
+                    <address>
+                        <p>214 Street Kingston, NY 12401</p>
+                        <p><a href="tel:+155512345">+1 555 12345</a></p>
+                        <p><a href="mailto:support@company.com">support@company.com</a></p>
+                    </address>
                 </div>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top btn btn-primary rounded-circle">
+    <!-- Back to Top -->
+    <a href="#main-content" class="back-to-top" aria-hidden="true" tabindex="-1">
         <i class="fas fa-arrow-up"></i>
-    </button>
+    </a>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/main.js" defer></script>
 </body>
 
 </html>
