@@ -506,6 +506,7 @@ img {
     background-color: var(--primary);
     color: var(--text-on-dark);
     padding-top: 90px;
+    padding-bottom: 91px;
 }
 
 .footer-grid {
