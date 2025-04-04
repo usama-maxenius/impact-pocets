@@ -249,6 +249,9 @@ img {
 .nav-item {
     margin-right: var(--space-3xl);
 }
+.nav-item:last-child {
+    margin-right: 0;
+}
 
 .nav-link {
     font-size: var(--text-base);
