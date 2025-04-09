@@ -1,0 +1,734 @@
+
+        /* CSS Variables */
+        :root {
+            /* Colors */
+            --primary-color: #2b3241;
+            --secondary-color: #5d6a8a;
+            --accent-color: #ff893B;
+            --white: #ffffff;
+            --light-gray: #f5f6f8;
+            --border-color: #e1e4e8;
+
+            /* Typography */
+            --font-main: 'jost', Roboto, sans-serif;
+            --font-heading: 'jost', Roboto, sans-serif;
+            --font-size-xs: 0.75rem;
+            --font-size-sm: 0.875rem;
+            --font-size-md: 1rem;
+            --font-size-lg: 1.125rem;
+            --font-size-xl: 1.25rem;
+            --font-size-xxl: 1.5rem;
+            --font-size-xxxl: 3rem;
+
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            --spacing-xxl: 4rem;
+
+            /* Border Radius */
+            --border-radius-sm: 4px;
+            --border-radius-md: 8px;
+            --border-radius-lg: 16px;
+
+            /* Shadows */
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+            --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--primary-color);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* img {
+            max-width: 100%;
+        } */
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: var(--white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: var(--spacing-sm) 0;
+        }
+        .bar-pointer::after{
+            content: "";
+  display: block;
+  width: 100%;              
+  height: 2px;             
+  background-color: #f58a4b;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 40px;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: var(--spacing-md);
+        } 
+        .nav-menu li{
+        margin-right: 45px;
+        }
+        .nav-menu li:last-child{
+            margin-right: 0;
+        }
+
+        .nav-menu a {
+            font-size: var(--font-size-md);
+            font-weight: 500;
+            text-transform: uppercase;
+            transition: color 0.3s;
+        }
+
+        .nav-menu a:hover, .nav-menu .active {
+            color: var(--accent-color);
+        }
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            margin: 5px auto;
+            background-color: var(--primary-color);
+            transition: all var(--transition-speed);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 60vh;
+            min-height: 400px;
+            background: linear-gradient(rgba(43, 50, 65, 0.7), rgba(43, 50, 65, 0.7)), url('/api/placeholder/1200/600') center/cover no-repeat;
+            display: flex;
+            align-items: center;
+            color: var(--white);
+        }
+
+        .hero-content {
+            width: 50%;
+            padding: var(--spacing-lg);
+        }
+
+        .hero h1 {
+            font-size: var(--font-size-xxxl);
+            font-weight: 700;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .hero p {
+            font-size: var(--font-size-lg);
+            margin-bottom: var(--spacing-md);
+        }
+
+        /* What We Do Section */
+        .what-we-do {
+            padding: var(--spacing-xxl) 0;
+            background-color: var(--white);
+            background: linear-gradient(
+                rgba(43, 50, 65, 0.8) 50%,  /* 50% opacity for the first color */
+                rgba(19, 41, 89, 0.9) 90%  /* 90% opacity for the second color */
+            ), url('../images/our-services/ourservices-hero-background.png') center/cover no-repeat;
+            
+
+            background-position: center;
+            max-width: 1200px;
+            height: 550px;
+            margin: auto;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+        }
+
+        .what-we-do-content {
+            max-width: 757px;
+            background-color: #ffffff;
+            padding: 63px 82px 85px;
+            position: relative;
+            left: -221px;
+            bottom: -114px !important;
+        }
+
+        .what-we-do-text {
+            flex: 1;
+
+        }
+
+        /* .what-we-do-image {
+            flex: 1;
+        } */
+
+        .section-title {
+            font-size: var(--font-size-xxxl);
+            line-height: 61px;
+            font-weight: 600;
+            margin-bottom: var(--spacing-md);
+            color: var(--primary-color);
+        }
+
+        .section-subtitle {
+            font-size: var(--font-size-xxl);
+            font-weight: 500;
+            /* margin-bottom: var(--spacing-sm); */
+        }
+
+        /* Fund Incubation Section */
+        .fund-incubation {
+            padding: var(--spacing-xxl) 0;
+            display: flex;
+            gap: var(--spacing-xl);
+        }
+
+        .fund-process {
+            flex: 1;
+        }
+
+        .fund-info {
+            max-width: 584px;
+            /* margin-top: -45px; */
+            display: flex;
+            flex-direction: column; /* Align children vertically */
+            justify-content: center; /* Vertically centers the content */
+            align-items: center; /* Horizontally centers the content (optional) */
+            height: 100vh; /* Ensures the container takes full viewport height */
+            text-align: center; /* Optional: Centers text horizontally */
+        }
+        .fund-info p{
+            font-size: var(--font-size-md);
+        }
+
+        .vision-block{
+            display: flex;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-xl);
+            max-width: 232px;
+            text-align: left;
+        }
+        .vision-block h3::after {
+            content: "";
+    display: block;
+    width: 46%;
+    height: 5px;
+    background-color:var(--accent-color);
+    margin-top: 15px; 
+          }
+          
+        .process-icon {
+            width: 60px;
+            height: 60px;
+            background-color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .process-step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .step-content {
+            margin-left: var(--spacing-sm);
+        }
+
+        /* Advisory Services Section */
+        .advisory-services {
+            padding: 60px  80px  80px;
+            background-color: #f0f1f7;
+            max-width: 1200px;
+            margin: auto;
+
+        }
+        
+        .advisory-content {
+            display: flex;
+            gap: var(--spacing-xl);
+        }
+
+        .advisory-text {
+            flex: 1;
+        }
+
+        .advisory-services-list {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-md);
+        }
+        
+        blockquote{
+            max-width: 372px;
+            background-color: #ffffff;
+            font-size: 24px;
+            padding: 38px 39px 34px 80px;
+            position: relative;
+            top: 80px;
+            right: 104px;
+        }
+        
+        .service-card {
+            gap: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+/* 
+        .service-icon {
+            width: 40px;
+            height: 40px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            border-radius: var(--border-radius-sm);
+            align-items: center;
+            justify-content: center;
+            margin-bottom: var(--spacing-sm);
+        } */
+.service-card h4{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #3c4144;
+
+}
+
+
+        /* Technology & AI Section */
+        .technology-ai {
+            padding: var(--spacing-xxl) 0;
+            display: flex;
+            gap: var(--spacing-xl);
+        }
+        .tech-info .vision-block h3{
+    
+            font-size: 24px;
+            line-height: 34px;
+
+        }
+
+        .tech-process {
+            flex: 1;
+        }
+
+        .tech-info {
+            flex: 1;
+            padding: var(--spacing-lg);
+        }
+
+        /* Tax Optimization Section */
+        .tax-optimization-content {
+            padding: var(--spacing-xxl) 0;
+            background-color: var(--white);
+            display: flex;
+            gap: var(--spacing-xl);
+            box-shadow: 2px 1px 18px 3px #F0F1F799;
+            padding: 108px 81px;
+        }
+        .tax-optimization-content blockquote{
+            font-size: 23px;
+        }
+
+        .tax-text {
+            flex: 1;
+        }
+
+        .tax-services {
+            flex: 1;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .smart-text{
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: 600;
+            margin-top: 26px;
+        }
+
+        .tax-service-card-1{
+            background-color: #EEEFF6;
+            padding: 37px 19px;
+            height: 193px;
+
+        }
+        .tax-service-card-1 h4{
+            font-size: 15px;
+            line-height: 22px;
+            font-weight: 400;
+            text-align: center;
+
+        }
+        .tax-service-card-2{
+            background-color: #CACFE3;
+            padding: 37px 19px;
+            height: 193px;
+        }
+        .tax-service-card-2 h4{
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 400;
+            text-align: center;
+        }
+        .tax-icon {
+            width: 50px;
+            height: 50px;
+            margin: 0 auto var(--spacing-sm);
+        }
+
+        /* What Sets Us Apart Section */
+        .what-sets-us-apart {
+            padding: 150px 0;
+            text-align: center;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: var(--spacing-xl);
+            gap: var(--spacing-md);
+        }
+
+        .feature {
+            flex: 1;
+            padding: var(--spacing-md);
+            background-color: var(--white);
+            border-radius: var(--border-radius-md);
+            box-shadow: var(--shadow-sm);
+        }
+
+        /* .feature-icon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto var(--spacing-md);
+        } */
+         .feature h3{
+
+font-size: 18px;
+
+         }
+
+        /* Call To Action Section */
+        .cta {
+            padding-top: 0px;
+            background-color: var(--white);
+            text-align: center;
+            padding-bottom: 150px;
+        }
+
+        .cta h2 {
+            font-size: 48px;
+            line-height: 55px;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .cta-small-para {
+            font-size: var(--font-size-lg);
+            margin-bottom:10px;
+            max-width: 700px;
+            font-weight: 600;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cta-long-para{
+            font-size: 18px;
+            line-height: 28px;
+            max-width: 722px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: var(--spacing-sm) var(--spacing-md);
+            background-color: var(--accent-color);
+            color: var(--white);
+            border-radius: var(--border-radius-sm);
+            font-weight: 500;
+            transition: background-color 0.3s;
+            margin-top: 42px;
+        }
+
+        .btn:hover {
+            background-color: #e07a3b;
+        }
+
+        /* Newsletter */
+        .newsletter {
+            padding: var(--spacing-lg) 0;
+            background-color: var(--light-gray);
+            text-align: center;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: var(--spacing-md) auto 0;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            padding: var(--spacing-sm);
+            border: 1px solid var(--border-color);
+            border-radius: var(--border-radius-sm) 0 0 var(--border-radius-sm);
+            font-family: var(--font-main);
+        }
+
+        .newsletter-btn {
+            padding: var(--spacing-sm) var(--spacing-md);
+            background-color: var(--accent-color);
+            color: var(--white);
+            border: none;
+            border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #36355D;
+            color: var(--white);
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .footer-logo img {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-info {
+            max-width: 300px;
+            font-size: var(--font-size-sm);
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-links h3 {
+            font-size: var(--font-size-md);
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .footer-menu {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .footer-menu li {
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .footer-contact {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .contact-icon {
+            margin-right: var(--spacing-xs);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: var(--spacing-sm);
+        }
+
+        .social-icon {
+            width: 30px;
+            height: 30px;
+            background-color: var(--secondary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.3s;
+        }
+
+        .social-icon:hover {
+            background-color: var(--accent-color);
+        }
+
+        @media (max-width: 768px) {
+
+            .what-we-do-content,
+            .fund-incubation,
+            .advisory-content,
+            .technology-ai,
+            .tax-optimization,
+            .features,
+            .footer-container {
+                flex-direction: column;
+            }
+            .what-we-do-content{
+                bottom: -43px !important;
+            }
+
+            .advisory-services-list {
+                grid-template-columns: 1fr;
+            }
+
+            .tax-services {
+                flex-direction: column;
+            }
+
+            .hero-content {
+                width: 100%;
+            }
+            .hamburger {
+                display: block;
+            }
+            .container{
+                max-width: 100%;
+                padding: 15px var(--spacing-md);
+            }
+            
+        
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+        
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+        
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+        
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: var(--white);
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+                box-shadow: var(--shadow-md);
+                padding: var(--spacing-md) 0;
+            }
+        
+            .nav-menu.active {
+                left: 0;
+            }
+        
+            .nav-menu li {
+                margin: var(--spacing-sm) 0;
+            }
+            .tax-optimization-content{
+                display: block;
+            }
+            .what-we-do-content{
+                left: 0px;
+            }
+            blockquote {
+                right: 0px;
+                top: 25px;
+            }
+        .tech-process img{
+        margin-left: 50px;
+        }
+        footer{
+            display: flex;
+        }
+        .bar-pointer::after{
+            display: none;
+        }
+
+        }
+        @media (max-width: 425px) {
+
+            .what-we-do-content{
+                background-color: #ffffff;
+                padding: 63px 24px 85px;
+                position: relative;
+                top: 15px;
+               
+            }
+            .fund-incubation h2, .section-title {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            .tech-process img{
+                width: 300px;
+            }
+            .fund-img{
+                width: 300px;
+            }
+            .advisory-services{
+                padding: 60px 22px 80px;
+            }
+            .fund-incubation{
+                padding: 0;
+            }
+            footer{
+                display: flex;
+                justify-content: center;
+                margin: auto;
+            }
+            .footer-col{
+                margin-top: 25px;
+            }
+            .tax-optimization-content{
+                padding: 50px 40px;
+            }
+            .smart-text{
+                font-size: 17px;
+                line-height: 57px;
+            
+            }
+            .tech-process img{
+                margin-left: 0;
+            }
+        }

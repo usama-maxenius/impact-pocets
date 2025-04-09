@@ -308,6 +308,11 @@ img {
     padding: 0 40px;
     /* Matching your original left padding */
 }
+.hero-side-img img{
+    position: relative;
+    top: -106px;
+    float: right;
+}
 
 .hero-title {
     font-size: 48px;
@@ -355,6 +360,14 @@ img {
     margin-bottom: var(--space-sm);
 }
 
+.bar-after::after{
+    content: "";
+    display: block;
+    width: 7%;
+    height: 4px;
+    background-color: var(--secondary);
+    margin-top: 16px;
+}
 /* Why Join Section */
 /* .why-join-section {
     padding: var(--space-150px) 0;
@@ -720,6 +733,14 @@ img {
 
     .hero-content {
         max-width: 100%;
+    }
+    .hero-title{
+        margin-bottom: 200px;
+    }
+    .hero-content img{
+        position: relative;
+    bottom: -222px;
+    left: 23px
     }
     .highlight-box{
         bottom: -92px;
