@@ -34,6 +34,7 @@
     --space-xl: 2rem;
     --space-2xl: 3rem;
     --space-3xl: 4rem;
+    --space-4xl: 4.25rem;
     --space-150px: 150px;
 
     /* Borders */
@@ -143,7 +144,6 @@ img {
     font-family: var(--font-primary);
     font-weight: 500;
     text-align: center;
-    border-radius: var(--radius-md);
     transition: all 0.3s ease;
     border: none;
     cursor: pointer;
@@ -179,7 +179,7 @@ img {
 
 .learn-more-button-team{
     float: right;
-    margin-top: 30px;
+    margin-top: 42px;
 }
 
 /* Navigation */
@@ -330,7 +330,6 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-xl);
-    align-items: center;
 }
 
 .about-content {
@@ -387,7 +386,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: var(--space-lg);
-    margin-bottom: var(--space-xl);
+    margin-bottom: 68px;
 }
 
 .benefit-item {
@@ -397,8 +396,8 @@ img {
 }
 
 .benefit-icon {
-    width: 40px;
-    height: 40px;
+    width: 72px;
+    height: 72px;
 }
 
 .benefit-text {
@@ -438,11 +437,19 @@ img {
     list-style: none;
 }
 
+.info-list img{
+    width: 42px;
+    height: 42px;
+}
 .info-list li {
     display: flex;
     align-items: center;
     gap: var(--space-md);
     margin-bottom: var(--space-lg);
+}
+.info-list span{
+    width: 180px;
+    font-size: 16px;
 }
 
 .highlight-box {
@@ -459,6 +466,11 @@ img {
     margin: 0; 
 }
 
+.highlight-box p{
+    font-size: 18px;
+    text-align: left;
+}
+
 /* Team Section */
 .team-section {
     padding: var(--space-150px) 0;
@@ -467,13 +479,13 @@ img {
 .section-subtitle {
     font-size: var(--text-lg);
     max-width: 70%;
-    margin: 0 auto var(--space-2xl);
+    margin: 0 auto var(--space-4xl);
 }
 
 /* Process Section */
 .process-section {
     padding-bottom: 150px;
-    margin-top: 50px;
+    margin-top: 132px;
 }
 
 .process-diagram {
