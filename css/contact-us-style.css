@@ -1,232 +1,236 @@
 .map-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin: 30px auto;
-    max-width: 860px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  }
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 30px auto;
+  max-width: 860px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-  .map-container iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-  }
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 
-  .contact_form_main {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin: 80px auto;
-    padding: 20px 40px;
-    border-radius: 12px;
-  }
+.contact_form_main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 80px auto;
+  padding: 20px 40px;
+  border-radius: 12px;
+}
 
-  .contact-info {
-    flex: 1 1 250px;
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
-  }
+.contact-info {
+  flex: 1 1 250px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .contact-info p {
-    margin-bottom: 15px;
-  }
-
-  .form-fields_main {
-    flex: 2 1 400px;
-    padding: 30px;
-    border: 1px solid #F0F1F7;
-  }
-
-  .form-fields_main input, .form-fields_main textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #F0F1F7;
-    border-radius: 6px;
-    background: transparent;
-  }
-
-  .form-fields_main button {
-    padding: 12px 30px;
-    background: #ff7a00;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  .faq-section {
-    max-width: 800px;
-    margin: 60px auto;
-    padding: 0 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .faq-section h3, .reach_out {
-  text-align: center;
+.contact-info p {
   margin-bottom: 15px;
-  font-family: Jost;
-  font-weight: 700;
-  font-size: 48px;
-  line-height: 55px;
-  letter-spacing: 0px;
-  vertical-align: middle;
-  color: #242D62;
-  padding-top: 50px;
+}
+
+.form-fields_main {
+  flex: 2 1 400px;
+  padding: 30px;
+  border: 1px solid #F0F1F7;
+}
+
+.form-fields_main input, .form-fields_main textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #F0F1F7;
+  border-radius: 6px;
+  background: transparent;
+}
+
+.form-fields_main button {
+  padding: 12px 30px;
+  background: #ff7a00;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.faq-section {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq-section h3, .reach_out {
+text-align: center;
+margin-bottom: 15px;
+font-family: Jost;
+font-weight: 700;
+font-size: 48px;
+line-height: 55px;
+letter-spacing: 0px;
+vertical-align: middle;
+color: #242D62;
+padding-top: 50px;
 }
 .faqs_para {
-    width: 80%;
-    font-family: Jost;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0px;
-    text-align: center;
+  width: 80%;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 .accordion {
-    border-radius: 8px;
-    overflow: hidden;
-    width: 100%;
-    padding-top: 30px;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 30px;
 }
 
 .accordion-item {
-    border: 1px solid #BEC0D0;
-    margin-bottom: 20px;
-    border-radius: 10px;
+  border: 1px solid #BEC0D0;
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
 .accordion-header {
-  padding: 20px 28px;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: bold;
-  transition: background 0.3s;
+padding: 20px 28px;
+cursor: pointer;
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: bold;
+transition: background 0.3s;
 }
 .acc_title {
-    font-family: Jost;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 32px;
-    letter-spacing: 0px;
-    color: #252525;
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: #252525;
 }
 .accordion-content {
-    display: none;
-    padding: 0px 28px 20px;
-    transition: all 0.3s ease;
-    font-family: Jost;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0px;
-    color: #3C4144;
+  display: none;
+  padding: 0px 28px 20px;
+  transition: all 0.3s ease;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #3C4144;
 }
 
 .accordion-item.active .accordion-content {
-  display: block;
+display: block;
 }
 .accordion-item.active .icon {
-  color: #242D62;
+color: #242D62;
 }
 
 .accordion-item.active .acc_title{
-  color: #242D62;
+color: #242D62;
 }
 
 .accordion-item .icon {
-    font-size: 26px;
-    transition: transform 0.3s ease;
-    color: #BEC0D0;
-    font-family: 'Jost';
-    font-weight: 400;
+  font-size: 26px;
+  transition: transform 0.3s ease;
+  color: #BEC0D0;
+  font-family: 'Jost';
+  font-weight: 400;
 }
 
 .accordion-item.active .icon {
-    transform: rotate(-90deg);
+  transform: rotate(-90deg);
 }
 .form_first {
-    justify-content: space-between;
-    display: flex;
-    gap: 15px;
+  justify-content: space-between;
+  display: flex;
+  gap: 15px;
 }
 .form_first div {
-    flex: 1;
+  flex: 1;
 }
 .form-fields_main label{
-  font-family: Jost;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 32px;
-  letter-spacing: 0px;
-  color:#3C4144;
+font-family: Jost;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+letter-spacing: 0px;
+color:#3C4144;
 
 }
 .cont_btn {
-    width: 100%;
-    text-align: end;
+  width: 100%;
+  text-align: end;
 }
 .cnt_loc {
-    background: #F0F1F7;
-    padding: 30px;
+  background: #F0F1F7;
+  padding: 30px;
 }
 .cnt_email {
-    border: 1px solid #E9EAEF;
-    padding: 30px;
+  border: 1px solid #E9EAEF;
+  padding: 30px;
 }
 .contact-info p{
-  font-family: Jost;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: 0px;
-  color: #3C4144;
-  padding-top: 40px;
+font-family: Jost;
+font-weight: 400;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0px;
+color: #3C4144;
+padding-top: 40px;
 
 }
 
 @media (max-width: 768px) {
-  .contact_form_main {
-    flex-direction: column;
-  }
-  .form_first {
-    justify-content: space-between;
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
-  }
-  .faq-section h3, .reach_out {
-      font-size: 36px;
-      line-height: 55px;
-  }
-  .contact_form_main {
-          padding: 20px;
-          margin: 50px auto;
-      }
-  .form-fields_main {
-      padding: 20px;
-  }
-  span.acc_title {
-      font-family: Jost;
-      font-weight: 600;
-      font-size: 18px;
-      line-height: 28px;
-  }
-  .accordion-header {
-    padding: 15px 20px;
-  }
-  .accordion-content {
-      display: none;
-      padding: 0px 20px 20px;
-  }
+.contact_form_main {
+  flex-direction: column;
+}
+.form_first {
+  justify-content: space-between;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+}
+.faq-section h3, .reach_out {
+    font-size: 36px;
+    line-height: 55px;
+}
+.faq-section {
+  margin: 0px auto;
+  padding-bottom: 50px;
+}
+.contact_form_main {
+        padding: 0px;
+        margin: 50px auto;
+    }
+.form-fields_main {
+    padding: 20px;
+}
+span.acc_title {
+    font-family: Jost;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+}
+.accordion-header {
+  padding: 15px 20px;
+}
+.accordion-content {
+    display: none;
+    padding: 0px 20px 20px;
+}
 }

@@ -751,7 +751,7 @@ footer {
 .social-icons a:hover {
     background-color: var(--accent-color);
 }
-@media (max-width: 1024px) and (min-width: 768px) {
+@media (max-width: 1024px) and (min-width: 600px) {
     .op_title {
         font-size: 36px;
         line-height: 48px;
@@ -908,10 +908,61 @@ footer {
     .role_upper .op_para {
         width: 50%;
     }
+    .header-container{
+        padding: 15px 15px;
+    }
+    .hamburger {
+        display: block;
+    }
+    .container{
+        max-width: 100%;
+        /* padding: 15px var(--space-md); */
+    }
+    
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: var(--shadow-md);
+        padding: var(--spacing-md) 0;
+    }
+
+    .bar-pointer::after{
+        display: none;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-menu li {
+        margin: var(--space-sm) 0;
+    }
+    .footer-grid{
+        padding: 30px;
+    }
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
 
     .header-container{
         padding: 15px 15px;
@@ -1192,6 +1243,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+    
 }
 /* end samar css */
 
@@ -1561,7 +1613,7 @@ footer {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .navbar-toggle {
         display: block;
     }

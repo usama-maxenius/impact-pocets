@@ -185,12 +185,12 @@
         }
 
         .what-we-do-content {
-            max-width: 757px;
+            max-width: 700px;
             background-color: #ffffff;
             padding: 63px 82px 85px;
             position: relative;
-            left: -221px;
-            bottom: -114px !important;
+            left: -250px;
+            bottom: -114px !important
         }
 
         .what-we-do-text {
@@ -220,7 +220,7 @@
         .fund-incubation {
             padding: var(--spacing-xxl) 0;
             display: flex;
-            gap: var(--spacing-xl);
+            gap: 160px;
         }
 
         .fund-process {
@@ -230,12 +230,12 @@
         .fund-info {
             max-width: 584px;
             /* margin-top: -45px; */
-            display: flex;
             flex-direction: column; /* Align children vertically */
             justify-content: center; /* Vertically centers the content */
-            align-items: center; /* Horizontally centers the content (optional) */
+            align-self: center;     /* Horizontally centers the content (optional) */
             height: 100vh; /* Ensures the container takes full viewport height */
-            text-align: center; /* Optional: Centers text horizontally */
+            text-align: left; /* Optional: Centers text horizontally */
+
         }
         .fund-info p{
             font-size: var(--font-size-md);
