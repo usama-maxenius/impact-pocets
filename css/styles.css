@@ -302,15 +302,16 @@ img {
     z-index: 2;
     height: 100%;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     max-width: 55%;
     /* Matching your original text width */
-    padding: 0 40px;
+    padding-left: 80px;
+    margin-top: 96px;
     /* Matching your original left padding */
 }
 .hero-side-img img{
     position: relative;
-    top: -106px;
+    top: -202px;
     float: right;
 }
 
@@ -422,7 +423,7 @@ img {
 }
 
 .info-title {
-    font-size: var(--text-3xl);
+    font-size: 28px;
     color: var(--primary);
     margin-bottom: var(--space-sm);
 }
@@ -430,7 +431,7 @@ img {
 .info-subtitle {
     font-size: var(--text-lg);
     color: var(--primary);
-    margin-bottom: var(--space-xl);
+    margin-bottom: var(--space-2xl);
 }
 
 .info-list {
@@ -446,6 +447,7 @@ img {
     align-items: center;
     gap: var(--space-md);
     margin-bottom: var(--space-lg);
+    align-items: flex-start;
 }
 .info-list span{
     width: 180px;
@@ -472,6 +474,9 @@ img {
 }
 
 /* Team Section */
+.team-section {
+    padding-top: var(--space-150px);
+}
 .team_tre{
     background-image: url('../images/Lane_at_NASDAQ.png');
     min-height: 380px;
@@ -479,6 +484,13 @@ img {
     position: relative;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.team-section .section-subtitle{
+    font-size: 18px;
+    line-height: 28px;
+    width: 813px;
+    margin: auto;
+    margin-bottom: 68px;
 }
 .team_cto{
     background-image: url('../images/Lane\ at\ Microsoft.png');
@@ -528,6 +540,14 @@ img {
 .process-section {
     padding-bottom: 150px;
     margin-top: 132px;
+}
+.process-section .section-subtitle {
+    font-size: 18px;
+    line-height: 28px;
+    width: 713px;
+    margin: auto;
+    margin-bottom: 68px;
+    text-align: center;
 }
 
 .process-diagram {
@@ -616,7 +636,7 @@ img {
 }
 
 .footer-heading {
-    font-size: var(--text-lg);
+    font-size: 16px;
     font-weight: 600;
     margin-bottom: var(--space-lg);
     text-transform: uppercase;
@@ -633,16 +653,18 @@ img {
 
 .footer-nav ul {
     list-style: none;
+    font-size: 17px;
 }
 
 .footer-nav li {
     margin-bottom: var(--space-sm);
+    font-size: 17px;
 }
 
 .footer-nav a {
     color: var(--text-on-dark);
     opacity: 0.7;
-    font-size: var(--text-base);
+    font-size: 17px;
 }
 
 .footer-nav a:hover {
@@ -777,6 +799,15 @@ img {
     .about-content {
         padding-left: 0;
         margin-top: var(--space-xl);
+    }
+    .about-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .about-media img{
+        display: flex;
+        justify-self: center !important;
     }
 
     .why-join-grid {
